@@ -423,7 +423,6 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
         widget.onChanged?.call(phoneNumber);
       },
       validator: (value) {
-        validator: (value) {
         if (value == null || !isNumeric(value)) {
           return widget.invalidNumberMessage;
         }
